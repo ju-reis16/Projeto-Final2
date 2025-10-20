@@ -1,0 +1,111 @@
+main {
+  padding: 30px;
+  background-image: url(https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2024/07/Pre_Olimpico_de-_Basquete-Masculino_Brasil_vence_Filipinas_vai_a_final_e_fica_a_um_jogo_de_Paris-e1720273472112.jpg?w=886);
+  background-size: cover;
+}
+
+.conteudo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.texto {
+  flex: 1 1 600px;
+  min-width: 300px;
+}
+
+.texto h2 {
+  font-size: 26px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.texto p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #ddd;
+  font-size: 16px;
+}
+
+.imagem {
+  flex: 0 0 250px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.imagem img {
+  width: 100%;
+  max-width: 250px;
+  border-radius: 10px;
+  border: 2px solid white;
+}
+
+@media (max-width: 992px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px 20px;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .search {
+    margin-top: 10px;
+  }
+
+  .conteudo {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .imagem {
+    order: -1;
+    margin-bottom: 20px;
+  }
+
+  .texto h2 {
+    font-size: 22px;
+  }
+
+  .texto p {
+    font-size: 15px;
+  }
+
+  .imagem img {
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  nav {
+    padding: 10px 15px;
+  }
+
+  .logo img {
+    height: 55px;
+  }
+
+  .menu {
+    gap: 8px;
+  }
+
+  .menu li a {
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+
+  .search input {
+    width: 100%;
+    font-size: 13px;
+  }
+}
