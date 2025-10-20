@@ -1,0 +1,123 @@
+.titulo-header {
+    background-color: #084105;
+    color: #115f08;
+    padding: 8px 15px;
+    border-radius: 10px;
+} 
+main {
+    background-image: url('https://static.mundoeducacao.uol.com.br/mundoeducacao/2022/10/falcao-futsal.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 30px;
+}
+.historia h1, .regras h2 {
+    color: white;
+}
+
+.historia p {
+    max-width: 800px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+.imagens-jogadores {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.imagens-jogadores img {
+    width: 120px;
+    height: 150px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+.regras {
+    margin-top: 30px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.regras h3 {
+    margin-top: 15px;
+    color: #6add43;
+}
+
+.regras ul {
+    margin: 10px 0 20px 20px;
+}
+
+.regras li {
+    margin-bottom: 6px;
+    font-size: 15px;
+}
+.conteudo {
+    background-color: rgba(105, 98, 98, 0.5);
+    padding: 10px;
+    border-radius: 8px;
+}
+@media (max-width: 992px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    main.fundo {
+        padding: 30px 20px;
+    }
+
+    .conteudo {
+        max-width: 700px;
+        padding: 20px;
+    }
+}
+
+/* --- Celulares (largura até 600px) --- */
+@media (max-width: 600px) {
+    nav {
+        padding: 15px;
+    }
+
+    .logo img {
+        width: 90px;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+        padding: 0;
+    }
+
+    .search input {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    main.fundo {
+        padding: 20px 15px;
+    }
+
+    .conteudo {
+        padding: 15px;
+    }
+
+    .criador {
+        width: 100%;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+
+    .social img {
+        width: 25px;
+    }
+}
