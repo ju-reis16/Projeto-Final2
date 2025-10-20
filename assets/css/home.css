@@ -1,78 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  /* font-family: "Poppins", Arial, sans-serif; */
-}
-
-body {
-  background-color: #f0f2f5;
-  color: #222;
-}
-
-header {
-  background-color: #f9e65c;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 40px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.logo img {
-  width: 155px;
-  height: auto;
-}
-
-.logo h1 {
-  color: #002b7f;
-  font-size: 22px;
-  font-weight: 700;
-}
-
-header {
-  background-color: #030727;
-  padding: 20px 50px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.menu {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
-.menu li a {
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-  padding: 6px 12px;
-  border-radius: 5px;
-  transition: background-color 0.3s;
-  font-weight: 600;
-}
-
-.menu li a:hover,
-.menu li a.active {
-  background-color: #010e44;
-}
-
-.search input {
-  padding: 6px 10px;
-  border: none;
-  border-radius: 15px;
-  font-size: 14px;
-  outline: none;
-}
-
 .hero {
   position: relative;
   height: 90vh;
@@ -93,15 +18,7 @@ header {
   z-index: -2;
 }
 
-.overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
-  top: 0;
-  left: 0;
-  z-index: -1;
-}
+
 
 .texto-central h1 {
   font-size: 3rem;
