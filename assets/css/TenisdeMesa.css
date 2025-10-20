@@ -1,0 +1,245 @@
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  background-color: #000069;
+  padding: 20px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo img {
+  height: 70px;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.menu li a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.menu li a:hover,
+.menu li a.active {
+  background-color: #3333b7;
+}
+
+.search input {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 15px;
+  font-size: 14px;
+  outline: none;
+}
+.titulo-header {
+    background-color: #b5c9f2;
+    color: #0c2c6d;
+    padding: 8px 15px;
+    border-radius: 10px;
+}
+main {
+    background-image: url('https://vollo.vtexassets.com/arquivos/ids/163288/VT710R-Conjunto-Tenis-de-Mesa-Vollo-Exemplo-Uso-02-1200px--1-.jpg.jpg?v=638842147036600000');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 30px;
+}
+.historia {
+    display: flex;
+    justify-content: space-around;
+}
+.historia h1, .regras h2 {
+    color: white;
+}
+
+.historia p {
+    max-width: 800px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+.imagens-jogadores {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.imagens-jogadores img {
+    width: 120px;
+    height: 150px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+.regras {
+    margin-top: 30px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.regras h3 {
+    margin-top: 15px;
+    color: #c8d8ff;
+}
+
+.regras ul {
+    margin: 10px 0 20px 20px;
+}
+
+.regras li {
+    margin-bottom: 6px;
+    font-size: 15px;
+}
+@media (max-width: 900px) {
+  html, body {
+    width: 100%;
+    overflow-x: hidden; /* Evita corte lateral */
+  }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .logo img {
+    width: 80px;
+  }
+
+  .menu {
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .menu li a {
+    font-size: 15px;
+  }
+
+  .search input {
+    width: 180px;
+  }
+
+  main {
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .historia {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .historia p {
+    max-width: 95%;
+    font-size: 15px;
+  }
+
+  .imagens-jogadores {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .imagens-jogadores img {
+    width: 130px;
+    height: 160px;
+  }
+
+  .regras {
+    font-size: 15px;
+    padding: 15px;
+  }
+}
+
+/* --- Celulares (até 600px) --- */
+@media (max-width: 600px) {
+  html, body {
+    width: 100%;
+    overflow-x: hidden; /* Garante que nada saia da tela */
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+  }
+
+  .menu li a {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    text-align: center;
+  }
+
+  .search input {
+    width: 150px;
+  }
+
+  main {
+    padding: 15px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .historia h1 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .historia p {
+    font-size: 14px;
+    text-align: justify;
+    max-width: 95%;
+  }
+
+  .imagens-jogadores {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .imagens-jogadores img {
+    width: 110px;
+    height: 130px;
+  }
+
+  .regras {
+    padding: 15px;
+    font-size: 14px;
+  }
+
+  .regras h2 {
+    font-size: 20px;
+  }
+
+  .footer-top,
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .social img {
+    width: 22px;
+  }
+}
